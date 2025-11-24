@@ -1,0 +1,26 @@
+ 
+class Animal: 
+def  init (self, name): 
+self.name = name 
+ 
+def eat(self): 
+print(f"{self.name} is eating.") 
+ 
+def sleep(self): 
+print(f"{self.name} is sleeping.") 
+ 
+class Dog(Animal): 
+def  init (self, name, breed): 
+super().  init (name) 
+self.breed = breed 
+ 
+def bark(self): 
+print(f"{self.name} (a {self.breed}) barks: Woof! Woof!") 
+ 
+class Cat(Animal): 
+def  init (self, name, color): 
+super().  init (name) 
+self.color = color 
+ 
+def meow(self): 
+print(f"{self.name} (a {self.color} cat) meows: Meow!")
